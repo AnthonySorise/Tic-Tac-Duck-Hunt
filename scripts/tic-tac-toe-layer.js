@@ -22,7 +22,7 @@ function TicTacToeLayer(dim,winCond){	//will eventually need to take in winning 
 					'height':'100%', 
 					'z-index':'1',
 					'display': 'inline-flex'
-				}).click(function(){
+				}).mousedown(function(){
 					ticTacToeLayer.clickGameSquare($(this).attr('id'));
 				});
 				var innerDiv = $("<div>").css({
